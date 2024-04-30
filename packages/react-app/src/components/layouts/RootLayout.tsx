@@ -19,9 +19,9 @@ interface LayoutProps {
 const RootLayout: React.FC<LayoutProps> = ({ children }) => {
     return (
        
-        <div className="bg-gypsum overflow-hidden flex flex-col min-h-screen">
+        <div className="bg-gypsum overflow-hidden flex flex-col min-h-screen font-Dm">
             <Header />
-            <div className="py-16 max-w-7xl mx-auto space-y-8 sm:px-6 lg:px-8">
+            <div className="py-16 max-w-7xl mx-auto space-y-8 sm:px-6 lg:px-8 bg-white rounded-md">
                 {/* <Sidebar /> */}
                 {children}
                 <Toaster position="bottom-right" reverseOrder={false} />

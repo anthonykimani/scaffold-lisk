@@ -24,12 +24,12 @@ const ViewProposals: React.FC<ViewProposalsProps> = ({ proposals, voteOnProposal
     <div>
       {proposals.map((proposal, index) => (
         <div key={index} className="">
-          <p>Proposal ID: {proposal.proposalId}</p>
-          <p>Fake NFT to Purchase: {proposal.nftTokenId}</p>
-          <p>Deadline: {proposal.deadline.toLocaleString()}</p>
-          <p>Yay Votes: {proposal.yayVotes}</p>
-          <p>Nay Votes: {proposal.nayVotes}</p>
-          <p>Executed?: {proposal.executed.toString()}</p>
+          <p className='my-2'>Proposal ID: {proposal.proposalId}</p>
+          <p className='my-2'>Fake NFT to Purchase: {proposal.nftTokenId}</p>
+          <p className='my-2'>Deadline: {proposal.deadline.toLocaleString()}</p>
+          <p className='my-2'>Yay Votes: {proposal.yayVotes}</p>
+          <p className='my-2'>Nay Votes: {proposal.nayVotes}</p>
+          <p className='my-2'>Executed?: {proposal.executed.toString()}</p>
           <div>
             {!proposal.executed && (
               <>
